@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
     s.version = "0.1.0"
     s.license  = { :type => "MIT", :file => "LICENSE" }
     s.author   = { 'lab-devoloper' => 'ivan.michaylovsky@sequenia.com' }
-    s.homepage         = 'https://github.com/sequenia/SQDifferenceKit'
+    s.homepage         = "https://github.com/sequenia/SQDifferenceKit"
     s.source           = { :git => 'https://github.com/sequenia/SQDifferenceKit.git', :tag => s.version.to_s }
 
     s.framework = "UIKit"

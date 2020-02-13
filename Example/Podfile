@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SQDifferenceKit_Example' do
+  pod 'SQDifferenceKit', :path => '../'
+
+  target 'SQDifferenceKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

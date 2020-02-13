@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
     s.dependency 'DifferenceKit', '~> 1.1.5'
     s.swift_version = "4.2"
 
-    s.source_ = "Sources/**/*.{swift}"
+    s.source_files = "Sources/**/*.{swift}"
 
 end
 

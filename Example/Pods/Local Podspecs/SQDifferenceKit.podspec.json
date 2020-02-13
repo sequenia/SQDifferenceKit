@@ -1,0 +1,29 @@
+{
+  "name": "SQDifferenceKit",
+  "platforms": {
+    "ios": "9.0"
+  },
+  "summary": "Base data to implementig as UITableCell/UICollectionView's data.",
+  "requires_arc": true,
+  "version": "0.1.0",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "lab-devoloper": "ivan.michaylovsky@sequenia.com"
+  },
+  "homepage": "https://github.com/lab-devoloper/SQDifferenceKit",
+  "source": {
+    "git": "https://github.com/lab-devoloper/SQDifferenceKit.git",
+    "tag": "0.1.0"
+  },
+  "frameworks": "UIKit",
+  "dependencies": {
+    "DifferenceKit": [
+      "~> 1.1.5"
+    ]
+  },
+  "swift_version": "4.2",
+  "source_files": "SQDifferenceKit/Classes/**/*"
+}

@@ -1,0 +1,6 @@
+framework module SQDifferenceKit {
+  umbrella header "SQDifferenceKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

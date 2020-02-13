@@ -1,0 +1,1054 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		067C2C10EF272D88F8FC5A243609E87E /* DifferenceKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C345E41961F1DC56C58C7FBFD9BBFE69 /* DifferenceKit-dummy.m */; };
+		111A6163B4B40ECA5B1C1C7FB479754D /* StagedChangeset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDA15D304CF5AB49C8CFA8D8AB5009E /* StagedChangeset.swift */; };
+		1563748BE3D07CC09FC49772434E4255 /* ModelSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB389E0F39F4C38DC8658B90FCD36DE /* ModelSection.swift */; };
+		16A9CD2CE201643EAC2BFCA74EE7051B /* SQDifferenceKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BD8BAECD823303A3A19458DBAADC794D /* SQDifferenceKit-dummy.m */; };
+		1A64C666BAC66C5022A5956234A36249 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA19A1857692F9D76BF6FC5CA4E5D60A /* UIKit.framework */; };
+		2387B91B226282F408840443F5DAC85D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8032DA15341286F26E0591D4C916C106 /* Foundation.framework */; };
+		2BC372FD45DA26984B29DB5AE65055B0 /* DifferenceKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1A370468404EE9902EEB97C82EF31DF /* DifferenceKit.framework */; };
+		2BE843ED671E3C411DAFA1C92AC970D8 /* ContentEquatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65B33E5C290EF5EDE5ED4A5A73BFE9E /* ContentEquatable.swift */; };
+		31BA26EB867F49A617566EF82EA21F96 /* Pods-SQDifferenceKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 162DB4E75C4CE90E1EBB705ACE9CDA62 /* Pods-SQDifferenceKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A806990E77F59BE95827C6B514F4D1A /* ContentIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286B1133BE94A28440C4F5CA5B2E8819 /* ContentIdentifiable.swift */; };
+		4BC3BFCCD7C85A90E5A89F31E3E77E44 /* AnyDifferentiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F40022001C76FAF30602AE61471771 /* AnyDifferentiable.swift */; };
+		64DE81D84CDE00D5E2282DFB5DE8D79B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8032DA15341286F26E0591D4C916C106 /* Foundation.framework */; };
+		6EFF72281D56D9FB00A65EDC23BB4789 /* DifferentiableSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3303355710AADC8298E16E3B6240034 /* DifferentiableSection.swift */; };
+		71290FB064E8FDFE2CC93CE940064396 /* ArraySection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0414C621F2857F24060FA3AADC652A /* ArraySection.swift */; };
+		7B00E57186BCB9B0D9A0286A2DC018EB /* ModelFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B776DF7E3AD06285736094C9703CAB /* ModelFooter.swift */; };
+		7BB820BB33F9C6D8DA0003B9F465D8B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8032DA15341286F26E0591D4C916C106 /* Foundation.framework */; };
+		92689DD3441FA5F0BA582EA6991C7875 /* Changeset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383511E02891A74BFF86087275348C00 /* Changeset.swift */; };
+		949FF3F3305C69C32DAD9E45FB1B0050 /* ModelRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E66948B048AB84C552326441097ED4 /* ModelRow.swift */; };
+		9CFAC4F34244DF240D099C18DEEE3DAF /* ModelHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BE33470DDDF37264F4FE80CA042F57 /* ModelHeader.swift */; };
+		9D780D094149F84B7839B3EE958A1306 /* UIKitExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB26C61DDCE6D8F0E92FC1A5217B6E /* UIKitExtension.swift */; };
+		A2055B159CE29D8E47FBEA96423FD6B0 /* Algorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16E8C929149EF4762D709E80A9126101 /* Algorithm.swift */; };
+		A206A3ABDB29CD7D96A8C17A6FFC33D9 /* Differentiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD124F3C9AFBFDFA3991A886DBF5073 /* Differentiable.swift */; };
+		B2B4840993AD43E95404B31C9E978171 /* Pods-SQDifferenceKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 40AAC35C5A830AFDCB3BE7003D983AA9 /* Pods-SQDifferenceKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BCD15CEA311833F5A32D1273312A1EEF /* ElementPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B21DC0481806A0AB05E8439759080B2 /* ElementPath.swift */; };
+		C1169201C9BB4AF000F7E49875970AA9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8032DA15341286F26E0591D4C916C106 /* Foundation.framework */; };
+		D2944353764E6F832D844247F8547D64 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA19A1857692F9D76BF6FC5CA4E5D60A /* UIKit.framework */; };
+		D6B966B3A2F35775A02AE2F5EEC457B6 /* SQDifferenceKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 926AC3799923B10596FDCEE720EB328A /* SQDifferenceKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E018222A382D2F034CE3C995846B0E12 /* DifferenceKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EDD0197C92458A1FE3FE38D741066FB /* DifferenceKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBA910515F00AE4FEC37736B238BC2E3 /* Pods-SQDifferenceKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D62DD7632E4D4EF4CC4CD8F24869B8D3 /* Pods-SQDifferenceKit_Tests-dummy.m */; };
+		F18699BE413B1B3EC25258DA8656D63B /* Pods-SQDifferenceKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D9744707ACBAD2B72EAF0513C38750D3 /* Pods-SQDifferenceKit_Example-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		42BE444AF61AD95158EFDCA9EA0620C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 104192AFBD7EF6AF4859FB199CDAF80D;
+			remoteInfo = DifferenceKit;
+		};
+		4ED4774046C565ABBA518FF4049271A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C683027EE6870561568FB6B44CE29E26;
+			remoteInfo = SQDifferenceKit;
+		};
+		9A5B529387ABE29C364C353377CFC800 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 882277002D87593A1F5B10DD890394B0;
+			remoteInfo = "Pods-SQDifferenceKit_Example";
+		};
+		E10E759BEF321D4D5F5A71377220F297 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 104192AFBD7EF6AF4859FB199CDAF80D;
+			remoteInfo = DifferenceKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A57DF0F2B60284B00B5C2141DD7D117 /* Pods-SQDifferenceKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SQDifferenceKit_Example.release.xcconfig"; sourceTree = "<group>"; };
+		0C7364CD2EC4EAA1BC55B8D5D6B880D3 /* DifferenceKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DifferenceKit.xcconfig; sourceTree = "<group>"; };
+		0D0EA0FD8E2E7BC822081B46630491AB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		0E0414C621F2857F24060FA3AADC652A /* ArraySection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArraySection.swift; path = Sources/ArraySection.swift; sourceTree = "<group>"; };
+		162DB4E75C4CE90E1EBB705ACE9CDA62 /* Pods-SQDifferenceKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SQDifferenceKit_Tests-umbrella.h"; sourceTree = "<group>"; };
+		16E8C929149EF4762D709E80A9126101 /* Algorithm.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Algorithm.swift; path = Sources/Algorithm.swift; sourceTree = "<group>"; };
+		1C55AD8A16CD739E2B836286A737C5D3 /* DifferenceKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DifferenceKit-prefix.pch"; sourceTree = "<group>"; };
+		22D6E08180E4212D664CDFFED656D5EA /* Pods-SQDifferenceKit_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SQDifferenceKit_Example-resources.sh"; sourceTree = "<group>"; };
+		24390EFD555DD124430DFF9724065945 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		286B1133BE94A28440C4F5CA5B2E8819 /* ContentIdentifiable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContentIdentifiable.swift; path = Sources/ContentIdentifiable.swift; sourceTree = "<group>"; };
+		296F883B92AD6776084434E47EAB1520 /* Pods-SQDifferenceKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SQDifferenceKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		2E2C8EFDCD6136E0A07F7D04374E8D80 /* Pods_SQDifferenceKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SQDifferenceKit_Example.framework; path = "Pods-SQDifferenceKit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30F40022001C76FAF30602AE61471771 /* AnyDifferentiable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnyDifferentiable.swift; path = Sources/AnyDifferentiable.swift; sourceTree = "<group>"; };
+		37E50302FB258C35BBEA9FA3B172AFEB /* Pods-SQDifferenceKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SQDifferenceKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		383511E02891A74BFF86087275348C00 /* Changeset.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Changeset.swift; path = Sources/Changeset.swift; sourceTree = "<group>"; };
+		40493377FEABD59871EDB80116602877 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		40AAC35C5A830AFDCB3BE7003D983AA9 /* Pods-SQDifferenceKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SQDifferenceKit_Example-umbrella.h"; sourceTree = "<group>"; };
+		420FFDE7A1F941C4DF1EA30EBC847007 /* DifferenceKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DifferenceKit.modulemap; sourceTree = "<group>"; };
+		49D89E786713A0319257F7EB74BC3FA8 /* Pods-SQDifferenceKit_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SQDifferenceKit_Tests-resources.sh"; sourceTree = "<group>"; };
+		4EF2CBBD4B853B3AB13715F4B85C9CC2 /* Pods-SQDifferenceKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SQDifferenceKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		55BE33470DDDF37264F4FE80CA042F57 /* ModelHeader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModelHeader.swift; path = SQDifferenceKit/Classes/ModelHeader.swift; sourceTree = "<group>"; };
+		5BDA15D304CF5AB49C8CFA8D8AB5009E /* StagedChangeset.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StagedChangeset.swift; path = Sources/StagedChangeset.swift; sourceTree = "<group>"; };
+		6426C57DA9F5784CA11731AB95754726 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69677757F6CE4A4BC54D8BA88EC95D68 /* DifferenceKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DifferenceKit.framework; path = DifferenceKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C016F9785AFC0E6ED1238B8F6EC4DB0 /* SQDifferenceKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = SQDifferenceKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6C274101DA246A1EA395276B97AC386B /* Pods_SQDifferenceKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SQDifferenceKit_Tests.framework; path = "Pods-SQDifferenceKit_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A803493D6ADB21FF0570FF88E9C94FF /* SQDifferenceKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SQDifferenceKit.framework; path = SQDifferenceKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8032DA15341286F26E0591D4C916C106 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		85E66948B048AB84C552326441097ED4 /* ModelRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModelRow.swift; path = SQDifferenceKit/Classes/ModelRow.swift; sourceTree = "<group>"; };
+		8BBB26C61DDCE6D8F0E92FC1A5217B6E /* UIKitExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIKitExtension.swift; path = Sources/Extensions/UIKitExtension.swift; sourceTree = "<group>"; };
+		921AA9E9D93940047F352061C3FB0376 /* Pods-SQDifferenceKit_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SQDifferenceKit_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		926AC3799923B10596FDCEE720EB328A /* SQDifferenceKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQDifferenceKit-umbrella.h"; sourceTree = "<group>"; };
+		9B21DC0481806A0AB05E8439759080B2 /* ElementPath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ElementPath.swift; path = Sources/ElementPath.swift; sourceTree = "<group>"; };
+		9EDD0197C92458A1FE3FE38D741066FB /* DifferenceKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DifferenceKit-umbrella.h"; sourceTree = "<group>"; };
+		A1B798D1CA2500CC1A72147A9396FF20 /* Pods-SQDifferenceKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SQDifferenceKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		ADAD670DE9DC451EA5BC6FD6BF94BBE8 /* SQDifferenceKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQDifferenceKit-prefix.pch"; sourceTree = "<group>"; };
+		B8E1691DC5AC95BD080943BC1C27BCEE /* Pods-SQDifferenceKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SQDifferenceKit_Tests.modulemap"; sourceTree = "<group>"; };
+		BAF19499AF59A532E685A9602EF8C1A7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAFCBD273DFD8E9C53198E5EFE042C8B /* Pods-SQDifferenceKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SQDifferenceKit_Example-frameworks.sh"; sourceTree = "<group>"; };
+		BD8BAECD823303A3A19458DBAADC794D /* SQDifferenceKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SQDifferenceKit-dummy.m"; sourceTree = "<group>"; };
+		C345E41961F1DC56C58C7FBFD9BBFE69 /* DifferenceKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DifferenceKit-dummy.m"; sourceTree = "<group>"; };
+		C35A67528AF016B178192DA66E38EBFF /* Pods-SQDifferenceKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SQDifferenceKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		C8EB18CBA0E681389650FCA2B435D09A /* SQDifferenceKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SQDifferenceKit.xcconfig; sourceTree = "<group>"; };
+		D0238DA1AD23630676D6CF916CAF3CC3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2053036BDD4938F31493652A1A06288 /* Pods-SQDifferenceKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SQDifferenceKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D3303355710AADC8298E16E3B6240034 /* DifferentiableSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DifferentiableSection.swift; path = Sources/DifferentiableSection.swift; sourceTree = "<group>"; };
+		D62DD7632E4D4EF4CC4CD8F24869B8D3 /* Pods-SQDifferenceKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SQDifferenceKit_Tests-dummy.m"; sourceTree = "<group>"; };
+		D8139D8CF3FC8D79D437C9D755F642C1 /* Pods-SQDifferenceKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SQDifferenceKit_Example.modulemap"; sourceTree = "<group>"; };
+		D9744707ACBAD2B72EAF0513C38750D3 /* Pods-SQDifferenceKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SQDifferenceKit_Example-dummy.m"; sourceTree = "<group>"; };
+		DAD124F3C9AFBFDFA3991A886DBF5073 /* Differentiable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Differentiable.swift; path = Sources/Differentiable.swift; sourceTree = "<group>"; };
+		E65B33E5C290EF5EDE5ED4A5A73BFE9E /* ContentEquatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContentEquatable.swift; path = Sources/ContentEquatable.swift; sourceTree = "<group>"; };
+		E6B278DE13455CEF8426680DCD2551D0 /* Pods-SQDifferenceKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SQDifferenceKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		E7B776DF7E3AD06285736094C9703CAB /* ModelFooter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModelFooter.swift; path = SQDifferenceKit/Classes/ModelFooter.swift; sourceTree = "<group>"; };
+		EDB389E0F39F4C38DC8658B90FCD36DE /* ModelSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModelSection.swift; path = SQDifferenceKit/Classes/ModelSection.swift; sourceTree = "<group>"; };
+		F1A370468404EE9902EEB97C82EF31DF /* DifferenceKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DifferenceKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2F1DF22E0473621CB1DCE4DA02768D1 /* SQDifferenceKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SQDifferenceKit.modulemap; sourceTree = "<group>"; };
+		F9F85387DD5B839393C8B781B085CEEE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA19A1857692F9D76BF6FC5CA4E5D60A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0BA4CA33128FB3F69689D2EE49A0B34F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BC372FD45DA26984B29DB5AE65055B0 /* DifferenceKit.framework in Frameworks */,
+				64DE81D84CDE00D5E2282DFB5DE8D79B /* Foundation.framework in Frameworks */,
+				1A64C666BAC66C5022A5956234A36249 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AA943F458EF9A935321A72522C56805 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1169201C9BB4AF000F7E49875970AA9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D6DF91CA08191053C190272A5EF9D3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2387B91B226282F408840443F5DAC85D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F95B04915B981B24E12E59CB52BD4CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BB820BB33F9C6D8DA0003B9F465D8B6 /* Foundation.framework in Frameworks */,
+				D2944353764E6F832D844247F8547D64 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0AF66E55C5393B7A669B4D1BF3719615 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D0238DA1AD23630676D6CF916CAF3CC3 /* Info.plist */,
+				F2F1DF22E0473621CB1DCE4DA02768D1 /* SQDifferenceKit.modulemap */,
+				C8EB18CBA0E681389650FCA2B435D09A /* SQDifferenceKit.xcconfig */,
+				BD8BAECD823303A3A19458DBAADC794D /* SQDifferenceKit-dummy.m */,
+				ADAD670DE9DC451EA5BC6FD6BF94BBE8 /* SQDifferenceKit-prefix.pch */,
+				926AC3799923B10596FDCEE720EB328A /* SQDifferenceKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/SQDifferenceKit";
+			sourceTree = "<group>";
+		};
+		0C9E5F373805B45A76BACF076EC0863C /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				8032DA15341286F26E0591D4C916C106 /* Foundation.framework */,
+				FA19A1857692F9D76BF6FC5CA4E5D60A /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		31B0D635992518F564255235C9187E54 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BA0E34DEF2F9600EAA65F05B0C2FBC38 /* SQDifferenceKit */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		31CB1F3325998228C4F37A0A2F526493 /* UIKitExtension */ = {
+			isa = PBXGroup;
+			children = (
+				8BBB26C61DDCE6D8F0E92FC1A5217B6E /* UIKitExtension.swift */,
+			);
+			name = UIKitExtension;
+			sourceTree = "<group>";
+		};
+		3599556DC58D42AE7A2013A773D2EAF9 /* DifferenceKit */ = {
+			isa = PBXGroup;
+			children = (
+				7A48A4D4C76308FC1785CF1D3A88E3E8 /* Core */,
+				F7C972F398FE89529B0934A196BCD181 /* Support Files */,
+				31CB1F3325998228C4F37A0A2F526493 /* UIKitExtension */,
+			);
+			name = DifferenceKit;
+			path = DifferenceKit;
+			sourceTree = "<group>";
+		};
+		4B377D638CC9BA00EF595E04A2E63383 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				0D0EA0FD8E2E7BC822081B46630491AB /* LICENSE */,
+				40493377FEABD59871EDB80116602877 /* README.md */,
+				6C016F9785AFC0E6ED1238B8F6EC4DB0 /* SQDifferenceKit.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		60C98491A6982B941FD70485C681E179 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E8ABC558EBC30313BF6858A843235B8D /* Pods-SQDifferenceKit_Example */,
+				BE8D967183FD15866A0D942FF190CE4C /* Pods-SQDifferenceKit_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7A48A4D4C76308FC1785CF1D3A88E3E8 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				16E8C929149EF4762D709E80A9126101 /* Algorithm.swift */,
+				30F40022001C76FAF30602AE61471771 /* AnyDifferentiable.swift */,
+				0E0414C621F2857F24060FA3AADC652A /* ArraySection.swift */,
+				383511E02891A74BFF86087275348C00 /* Changeset.swift */,
+				E65B33E5C290EF5EDE5ED4A5A73BFE9E /* ContentEquatable.swift */,
+				286B1133BE94A28440C4F5CA5B2E8819 /* ContentIdentifiable.swift */,
+				DAD124F3C9AFBFDFA3991A886DBF5073 /* Differentiable.swift */,
+				D3303355710AADC8298E16E3B6240034 /* DifferentiableSection.swift */,
+				9B21DC0481806A0AB05E8439759080B2 /* ElementPath.swift */,
+				5BDA15D304CF5AB49C8CFA8D8AB5009E /* StagedChangeset.swift */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		9576E2FBD2427C16F96125EA8790C0D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				69677757F6CE4A4BC54D8BA88EC95D68 /* DifferenceKit.framework */,
+				2E2C8EFDCD6136E0A07F7D04374E8D80 /* Pods_SQDifferenceKit_Example.framework */,
+				6C274101DA246A1EA395276B97AC386B /* Pods_SQDifferenceKit_Tests.framework */,
+				7A803493D6ADB21FF0570FF88E9C94FF /* SQDifferenceKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A98028C0865B58BF2FE7378DBBAAD9A9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3599556DC58D42AE7A2013A773D2EAF9 /* DifferenceKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BA0E34DEF2F9600EAA65F05B0C2FBC38 /* SQDifferenceKit */ = {
+			isa = PBXGroup;
+			children = (
+				E7B776DF7E3AD06285736094C9703CAB /* ModelFooter.swift */,
+				55BE33470DDDF37264F4FE80CA042F57 /* ModelHeader.swift */,
+				85E66948B048AB84C552326441097ED4 /* ModelRow.swift */,
+				EDB389E0F39F4C38DC8658B90FCD36DE /* ModelSection.swift */,
+				4B377D638CC9BA00EF595E04A2E63383 /* Pod */,
+				0AF66E55C5393B7A669B4D1BF3719615 /* Support Files */,
+			);
+			name = SQDifferenceKit;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		BE8D967183FD15866A0D942FF190CE4C /* Pods-SQDifferenceKit_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F9F85387DD5B839393C8B781B085CEEE /* Info.plist */,
+				B8E1691DC5AC95BD080943BC1C27BCEE /* Pods-SQDifferenceKit_Tests.modulemap */,
+				D2053036BDD4938F31493652A1A06288 /* Pods-SQDifferenceKit_Tests-acknowledgements.markdown */,
+				A1B798D1CA2500CC1A72147A9396FF20 /* Pods-SQDifferenceKit_Tests-acknowledgements.plist */,
+				D62DD7632E4D4EF4CC4CD8F24869B8D3 /* Pods-SQDifferenceKit_Tests-dummy.m */,
+				921AA9E9D93940047F352061C3FB0376 /* Pods-SQDifferenceKit_Tests-frameworks.sh */,
+				49D89E786713A0319257F7EB74BC3FA8 /* Pods-SQDifferenceKit_Tests-resources.sh */,
+				162DB4E75C4CE90E1EBB705ACE9CDA62 /* Pods-SQDifferenceKit_Tests-umbrella.h */,
+				296F883B92AD6776084434E47EAB1520 /* Pods-SQDifferenceKit_Tests.debug.xcconfig */,
+				E6B278DE13455CEF8426680DCD2551D0 /* Pods-SQDifferenceKit_Tests.release.xcconfig */,
+			);
+			name = "Pods-SQDifferenceKit_Tests";
+			path = "Target Support Files/Pods-SQDifferenceKit_Tests";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				24390EFD555DD124430DFF9724065945 /* Podfile */,
+				31B0D635992518F564255235C9187E54 /* Development Pods */,
+				F31D287A669229307355592986EB7346 /* Frameworks */,
+				A98028C0865B58BF2FE7378DBBAAD9A9 /* Pods */,
+				9576E2FBD2427C16F96125EA8790C0D2 /* Products */,
+				60C98491A6982B941FD70485C681E179 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E8ABC558EBC30313BF6858A843235B8D /* Pods-SQDifferenceKit_Example */ = {
+			isa = PBXGroup;
+			children = (
+				6426C57DA9F5784CA11731AB95754726 /* Info.plist */,
+				D8139D8CF3FC8D79D437C9D755F642C1 /* Pods-SQDifferenceKit_Example.modulemap */,
+				4EF2CBBD4B853B3AB13715F4B85C9CC2 /* Pods-SQDifferenceKit_Example-acknowledgements.markdown */,
+				C35A67528AF016B178192DA66E38EBFF /* Pods-SQDifferenceKit_Example-acknowledgements.plist */,
+				D9744707ACBAD2B72EAF0513C38750D3 /* Pods-SQDifferenceKit_Example-dummy.m */,
+				BAFCBD273DFD8E9C53198E5EFE042C8B /* Pods-SQDifferenceKit_Example-frameworks.sh */,
+				22D6E08180E4212D664CDFFED656D5EA /* Pods-SQDifferenceKit_Example-resources.sh */,
+				40AAC35C5A830AFDCB3BE7003D983AA9 /* Pods-SQDifferenceKit_Example-umbrella.h */,
+				37E50302FB258C35BBEA9FA3B172AFEB /* Pods-SQDifferenceKit_Example.debug.xcconfig */,
+				0A57DF0F2B60284B00B5C2141DD7D117 /* Pods-SQDifferenceKit_Example.release.xcconfig */,
+			);
+			name = "Pods-SQDifferenceKit_Example";
+			path = "Target Support Files/Pods-SQDifferenceKit_Example";
+			sourceTree = "<group>";
+		};
+		F31D287A669229307355592986EB7346 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1A370468404EE9902EEB97C82EF31DF /* DifferenceKit.framework */,
+				0C9E5F373805B45A76BACF076EC0863C /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F7C972F398FE89529B0934A196BCD181 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				420FFDE7A1F941C4DF1EA30EBC847007 /* DifferenceKit.modulemap */,
+				0C7364CD2EC4EAA1BC55B8D5D6B880D3 /* DifferenceKit.xcconfig */,
+				C345E41961F1DC56C58C7FBFD9BBFE69 /* DifferenceKit-dummy.m */,
+				1C55AD8A16CD739E2B836286A737C5D3 /* DifferenceKit-prefix.pch */,
+				9EDD0197C92458A1FE3FE38D741066FB /* DifferenceKit-umbrella.h */,
+				BAF19499AF59A532E685A9602EF8C1A7 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DifferenceKit";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3CA5ECE6D34CC698CD36F2AA6D26068D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2B4840993AD43E95404B31C9E978171 /* Pods-SQDifferenceKit_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5336DEE5077B0DBDC8B43D896A54AE55 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31BA26EB867F49A617566EF82EA21F96 /* Pods-SQDifferenceKit_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DA6DEFF034D4AB5426CEB77086018DA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E018222A382D2F034CE3C995846B0E12 /* DifferenceKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EF14536A06C645931D04D90A5B642BB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6B966B3A2F35775A02AE2F5EEC457B6 /* SQDifferenceKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		104192AFBD7EF6AF4859FB199CDAF80D /* DifferenceKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12FA67F924E7EA2621E092F0F779E2ED /* Build configuration list for PBXNativeTarget "DifferenceKit" */;
+			buildPhases = (
+				8DA6DEFF034D4AB5426CEB77086018DA /* Headers */,
+				917C549ADE9744B1CDDFC47925F93C92 /* Sources */,
+				6F95B04915B981B24E12E59CB52BD4CE /* Frameworks */,
+				DB5129461ECAE86309DFE1BC8D2B7BC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DifferenceKit;
+			productName = DifferenceKit;
+			productReference = 69677757F6CE4A4BC54D8BA88EC95D68 /* DifferenceKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		882277002D87593A1F5B10DD890394B0 /* Pods-SQDifferenceKit_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71CFA8495F8064E84CCB8D29100B49EB /* Build configuration list for PBXNativeTarget "Pods-SQDifferenceKit_Example" */;
+			buildPhases = (
+				3CA5ECE6D34CC698CD36F2AA6D26068D /* Headers */,
+				3A1479700AC411AE120BBB81978DF8DD /* Sources */,
+				5D6DF91CA08191053C190272A5EF9D3A /* Frameworks */,
+				C9D8AB123B48B31535B8F7E3DD75E3D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9BF72E2806D8EC1DBC2907BB591F874A /* PBXTargetDependency */,
+				DA87A3C7519DEDCADDDDC92C95BD425D /* PBXTargetDependency */,
+			);
+			name = "Pods-SQDifferenceKit_Example";
+			productName = "Pods-SQDifferenceKit_Example";
+			productReference = 2E2C8EFDCD6136E0A07F7D04374E8D80 /* Pods_SQDifferenceKit_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C58480E93E29050F763E6F2C13DC5757 /* Pods-SQDifferenceKit_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 688C0A5F2BA53137ED4F03628B150D0F /* Build configuration list for PBXNativeTarget "Pods-SQDifferenceKit_Tests" */;
+			buildPhases = (
+				5336DEE5077B0DBDC8B43D896A54AE55 /* Headers */,
+				036EFBF2BD9255140D3390EB4BC6BAC1 /* Sources */,
+				5AA943F458EF9A935321A72522C56805 /* Frameworks */,
+				F36DC91355ADFD247EA91866DBAF18ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D8596FD7C57199117801E57839D66E2 /* PBXTargetDependency */,
+			);
+			name = "Pods-SQDifferenceKit_Tests";
+			productName = "Pods-SQDifferenceKit_Tests";
+			productReference = 6C274101DA246A1EA395276B97AC386B /* Pods_SQDifferenceKit_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C683027EE6870561568FB6B44CE29E26 /* SQDifferenceKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C74DA4F90131AA3F8F517B11736D75B /* Build configuration list for PBXNativeTarget "SQDifferenceKit" */;
+			buildPhases = (
+				9EF14536A06C645931D04D90A5B642BB /* Headers */,
+				6F199B6735A879736F087D61D39C46CE /* Sources */,
+				0BA4CA33128FB3F69689D2EE49A0B34F /* Frameworks */,
+				972C4B12BA6F0F831DDA05BDF689EFEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBC4DDAD642720B6F0C1CAA24226308C /* PBXTargetDependency */,
+			);
+			name = SQDifferenceKit;
+			productName = SQDifferenceKit;
+			productReference = 7A803493D6ADB21FF0570FF88E9C94FF /* SQDifferenceKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 9576E2FBD2427C16F96125EA8790C0D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				104192AFBD7EF6AF4859FB199CDAF80D /* DifferenceKit */,
+				882277002D87593A1F5B10DD890394B0 /* Pods-SQDifferenceKit_Example */,
+				C58480E93E29050F763E6F2C13DC5757 /* Pods-SQDifferenceKit_Tests */,
+				C683027EE6870561568FB6B44CE29E26 /* SQDifferenceKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		972C4B12BA6F0F831DDA05BDF689EFEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9D8AB123B48B31535B8F7E3DD75E3D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB5129461ECAE86309DFE1BC8D2B7BC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F36DC91355ADFD247EA91866DBAF18ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		036EFBF2BD9255140D3390EB4BC6BAC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBA910515F00AE4FEC37736B238BC2E3 /* Pods-SQDifferenceKit_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A1479700AC411AE120BBB81978DF8DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F18699BE413B1B3EC25258DA8656D63B /* Pods-SQDifferenceKit_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F199B6735A879736F087D61D39C46CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B00E57186BCB9B0D9A0286A2DC018EB /* ModelFooter.swift in Sources */,
+				9CFAC4F34244DF240D099C18DEEE3DAF /* ModelHeader.swift in Sources */,
+				949FF3F3305C69C32DAD9E45FB1B0050 /* ModelRow.swift in Sources */,
+				1563748BE3D07CC09FC49772434E4255 /* ModelSection.swift in Sources */,
+				16A9CD2CE201643EAC2BFCA74EE7051B /* SQDifferenceKit-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		917C549ADE9744B1CDDFC47925F93C92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2055B159CE29D8E47FBEA96423FD6B0 /* Algorithm.swift in Sources */,
+				4BC3BFCCD7C85A90E5A89F31E3E77E44 /* AnyDifferentiable.swift in Sources */,
+				71290FB064E8FDFE2CC93CE940064396 /* ArraySection.swift in Sources */,
+				92689DD3441FA5F0BA582EA6991C7875 /* Changeset.swift in Sources */,
+				2BE843ED671E3C411DAFA1C92AC970D8 /* ContentEquatable.swift in Sources */,
+				4A806990E77F59BE95827C6B514F4D1A /* ContentIdentifiable.swift in Sources */,
+				067C2C10EF272D88F8FC5A243609E87E /* DifferenceKit-dummy.m in Sources */,
+				A206A3ABDB29CD7D96A8C17A6FFC33D9 /* Differentiable.swift in Sources */,
+				6EFF72281D56D9FB00A65EDC23BB4789 /* DifferentiableSection.swift in Sources */,
+				BCD15CEA311833F5A32D1273312A1EEF /* ElementPath.swift in Sources */,
+				111A6163B4B40ECA5B1C1C7FB479754D /* StagedChangeset.swift in Sources */,
+				9D780D094149F84B7839B3EE958A1306 /* UIKitExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D8596FD7C57199117801E57839D66E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-SQDifferenceKit_Example";
+			target = 882277002D87593A1F5B10DD890394B0 /* Pods-SQDifferenceKit_Example */;
+			targetProxy = 9A5B529387ABE29C364C353377CFC800 /* PBXContainerItemProxy */;
+		};
+		9BF72E2806D8EC1DBC2907BB591F874A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DifferenceKit;
+			target = 104192AFBD7EF6AF4859FB199CDAF80D /* DifferenceKit */;
+			targetProxy = 42BE444AF61AD95158EFDCA9EA0620C9 /* PBXContainerItemProxy */;
+		};
+		DA87A3C7519DEDCADDDDC92C95BD425D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SQDifferenceKit;
+			target = C683027EE6870561568FB6B44CE29E26 /* SQDifferenceKit */;
+			targetProxy = 4ED4774046C565ABBA518FF4049271A4 /* PBXContainerItemProxy */;
+		};
+		FBC4DDAD642720B6F0C1CAA24226308C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DifferenceKit;
+			target = 104192AFBD7EF6AF4859FB199CDAF80D /* DifferenceKit */;
+			targetProxy = E10E759BEF321D4D5F5A71377220F297 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		12A29BA39A5D2791EE3E0D11CB4E7B5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A57DF0F2B60284B00B5C2141DD7D117 /* Pods-SQDifferenceKit_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SQDifferenceKit_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SQDifferenceKit_Example/Pods-SQDifferenceKit_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1C99457846B363E14656F6EA195E7DA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37E50302FB258C35BBEA9FA3B172AFEB /* Pods-SQDifferenceKit_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SQDifferenceKit_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SQDifferenceKit_Example/Pods-SQDifferenceKit_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2A506743CF140B1834F797F766E2A82E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		327D49C0F52E67C80DC721AB98467A02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8EB18CBA0E681389650FCA2B435D09A /* SQDifferenceKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SQDifferenceKit/SQDifferenceKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SQDifferenceKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SQDifferenceKit/SQDifferenceKit.modulemap";
+				PRODUCT_MODULE_NAME = SQDifferenceKit;
+				PRODUCT_NAME = SQDifferenceKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		44295D204339F4F9E15DDBFBD4B39F84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8EB18CBA0E681389650FCA2B435D09A /* SQDifferenceKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SQDifferenceKit/SQDifferenceKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SQDifferenceKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SQDifferenceKit/SQDifferenceKit.modulemap";
+				PRODUCT_MODULE_NAME = SQDifferenceKit;
+				PRODUCT_NAME = SQDifferenceKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8D04E0E448D608327092A9D053494F8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C7364CD2EC4EAA1BC55B8D5D6B880D3 /* DifferenceKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DifferenceKit/DifferenceKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DifferenceKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DifferenceKit/DifferenceKit.modulemap";
+				PRODUCT_MODULE_NAME = DifferenceKit;
+				PRODUCT_NAME = DifferenceKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A6A7DE9C902EFE38BE4A346301EA1DB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C2970C9D149C85A459B1D2D82606BFEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 296F883B92AD6776084434E47EAB1520 /* Pods-SQDifferenceKit_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SQDifferenceKit_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SQDifferenceKit_Tests/Pods-SQDifferenceKit_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C97A3BF69880D4BEDA93B012DAB66CF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6B278DE13455CEF8426680DCD2551D0 /* Pods-SQDifferenceKit_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SQDifferenceKit_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SQDifferenceKit_Tests/Pods-SQDifferenceKit_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D0F4D5223C739968D4758F9BA6CDD5F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C7364CD2EC4EAA1BC55B8D5D6B880D3 /* DifferenceKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DifferenceKit/DifferenceKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DifferenceKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DifferenceKit/DifferenceKit.modulemap";
+				PRODUCT_MODULE_NAME = DifferenceKit;
+				PRODUCT_NAME = DifferenceKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C74DA4F90131AA3F8F517B11736D75B /* Build configuration list for PBXNativeTarget "SQDifferenceKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				327D49C0F52E67C80DC721AB98467A02 /* Debug */,
+				44295D204339F4F9E15DDBFBD4B39F84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12FA67F924E7EA2621E092F0F779E2ED /* Build configuration list for PBXNativeTarget "DifferenceKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D04E0E448D608327092A9D053494F8B /* Debug */,
+				D0F4D5223C739968D4758F9BA6CDD5F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6A7DE9C902EFE38BE4A346301EA1DB9 /* Debug */,
+				2A506743CF140B1834F797F766E2A82E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		688C0A5F2BA53137ED4F03628B150D0F /* Build configuration list for PBXNativeTarget "Pods-SQDifferenceKit_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2970C9D149C85A459B1D2D82606BFEC /* Debug */,
+				C97A3BF69880D4BEDA93B012DAB66CF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71CFA8495F8064E84CCB8D29100B49EB /* Build configuration list for PBXNativeTarget "Pods-SQDifferenceKit_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C99457846B363E14656F6EA195E7DA2 /* Debug */,
+				12A29BA39A5D2791EE3E0D11CB4E7B5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

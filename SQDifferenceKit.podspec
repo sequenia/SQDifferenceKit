@@ -7,36 +7,25 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'SQDifferenceKit'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of SQDifferenceKit.'
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+    s.platform = :ios
+    s.ios.deployment_target = '9.0'
+    s.name = "SQDifferenceKit"
+    s.summary = "Base data to implementig as UITableCell/UICollectionView\'s data."
+    s.requires_arc = true
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+    s.version = "0.1.0"
+    s.license  = { :type => "MIT", :file => "LICENSE" }
+    s.author   = { 'lab-devoloper' => 'ivan.michaylovsky@sequenia.com' }
+    s.homepage         = 'https://github.com/sequenia/SQDifferenceKit'
+    s.source           = { :git => 'https://github.com/sequenia/SQDifferenceKit.git', :tag => s.version.to_s }
 
-  s.homepage         = 'https://github.com/lab-devoloper/SQDifferenceKit'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'lab-devoloper' => 'ivan.michaylovsky@sequenia.com' }
-  s.source           = { :git => 'https://github.com/lab-devoloper/SQDifferenceKit.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+    s.framework = "UIKit"
+    s.dependency 'DifferenceKit', '~> 1.1.5'
+    s.swift_version = "4.2"
 
-  s.ios.deployment_target = '8.0'
+    s.source_files = 'SQDifferenceKit/Classes/**/*'
 
-  s.source_files = 'SQDifferenceKit/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'SQDifferenceKit' => ['SQDifferenceKit/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
+
+

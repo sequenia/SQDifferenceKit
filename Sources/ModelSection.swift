@@ -18,12 +18,17 @@ public protocol PositionSection {
 open class ModelSection: Differentiable {
     
     public typealias DifferenceIdentifier = String
-    public var differenceIdentifier: String = UUID().uuidString
+    public private(set) var differenceIdentifier: String
     
-    public var position: PositionSection!
+    public private(set) var position: PositionSection!
     
     public var header: ModelHeader?
     public var footer: ModelFooter?
+    
+    public required init(id: String, position: PositionSection) {
+        self.differenceIdentifier = id
+        self.position = position
+    }
      
     public init(position: PositionSection) {
         self.position = position
@@ -35,7 +40,7 @@ open class ModelSection: Differentiable {
     }
     
     open func copy() -> ModelSection {
-        let object = ModelSection(position: position)
+        let object = type(of: self).init(id: self.differenceIdentifier, position: self.position)
         object.header = self.header?.copy()
         object.footer = self.footer?.copy()
         return object

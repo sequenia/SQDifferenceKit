@@ -12,19 +12,17 @@ import DifferenceKit
 open class ModelRow: Differentiable {
 
     public typealias DifferenceIdentifier = String
-    public var differenceIdentifier: String = UUID().uuidString
+    public var differenceIdentifier: String
     
-    public init() {}
+    public required init(id: String) {
+        self.differenceIdentifier = id
+    }
     
     open func isContentEqual(to source: ModelRow) -> Bool {
         return self.differenceIdentifier == source.differenceIdentifier
     }
     
     open func copy() -> ModelRow {
-        let object = ModelRow()
-        object.differenceIdentifier = self.differenceIdentifier
-        
-        return object
+        return type(of: self).init(id: self.differenceIdentifier)
     }
-    
 }

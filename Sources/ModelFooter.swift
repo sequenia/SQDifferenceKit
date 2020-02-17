@@ -12,16 +12,16 @@ public class ModelFooter {
     
     public var differenceIdentifier: String!
     
-    public init(id: String) {
+    public required init(id: String) {
         self.differenceIdentifier = id
     }
     
-    public func isContentEqual (to source: ModelFooter?) -> Bool {
+    open func isContentEqual (to source: ModelFooter?) -> Bool {
         return self.differenceIdentifier == source?.differenceIdentifier
     }
     
-    public func copy() -> ModelFooter {
-        let object = ModelFooter(id: self.differenceIdentifier)
+    open func copy() -> ModelFooter {
+        let object = type(of: self).init(id: self.differenceIdentifier)
         return object
     }
 }

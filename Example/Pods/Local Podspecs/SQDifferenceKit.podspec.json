@@ -13,9 +13,9 @@
   "authors": {
     "lab-devoloper": "ivan.michaylovsky@sequenia.com"
   },
-  "homepage": "https://github.com/lab-devoloper/SQDifferenceKit",
+  "homepage": "https://github.com/sequenia/SQDifferenceKit",
   "source": {
-    "git": "https://github.com/lab-devoloper/SQDifferenceKit.git",
+    "git": "https://github.com/sequenia/SQDifferenceKit.git",
     "tag": "0.1.0"
   },
   "frameworks": "UIKit",
@@ -24,6 +24,7 @@
       "~> 1.1.5"
     ]
   },
-  "swift_version": "4.2",
-  "source_files": "SQDifferenceKit/Classes/**/*"
+  "swift_versions": "4.2",
+  "source_files": "Sources/**/*.{swift}",
+  "swift_version": "4.2"
 }

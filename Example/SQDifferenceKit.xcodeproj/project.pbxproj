@@ -318,23 +318,19 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SQDifferenceKit_Example/Pods-SQDifferenceKit_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-SQDifferenceKit_Example/Pods-SQDifferenceKit_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/DifferenceKit/DifferenceKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SQDifferenceKit/SQDifferenceKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DifferenceKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQDifferenceKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SQDifferenceKit_Example/Pods-SQDifferenceKit_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SQDifferenceKit_Example/Pods-SQDifferenceKit_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E3EB2A63BD9BD13093AFF9D4 /* [CP] Check Pods Manifest.lock */ = {

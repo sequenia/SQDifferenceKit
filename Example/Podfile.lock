@@ -12,7 +12,7 @@ DEPENDENCIES:
   - SQDifferenceKit (from `../`)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - DifferenceKit
 
 EXTERNAL SOURCES:
@@ -21,8 +21,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   DifferenceKit: 516f12e336ed65a3a0665847b5c3cb5cad4bd4ea
-  SQDifferenceKit: bc56b2a740729ca8554bc48520b20cba634ce25a
+  SQDifferenceKit: ee25917b0ae3ba0d53fb72dc4432949d71c54008
 
 PODFILE CHECKSUM: 0f5b54bb378f82f87608d6ce3380a34e2ea5c5e4
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.4

@@ -13,11 +13,9 @@ class TestModelRow: ModelRow {
     
     var text: String?
     
-    init(id: String, text: String?) {
-        super.init()
-        
+    convenience init(id: String, text: String?) {
+        self.init(id: id)
         self.text = text
-        self.differenceIdentifier = id
     }
     
     override func isContentEqual(to source: ModelRow) -> Bool {

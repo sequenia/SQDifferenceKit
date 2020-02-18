@@ -19,6 +19,10 @@ enum MainSreen: Int, PositionSection {
         return self.rawValue
     }
     
+    var id: String {
+        return String(self.rawValue)
+    }
+    
     func modelSection() -> ModelSection {
         return ModelSection(position: self)
     }
@@ -36,6 +40,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         self.configureTableView()
+
     }
     
     func configureTableView() {
@@ -88,7 +93,6 @@ class ViewController: UIViewController {
     }
     
     func appendOrReplaceSection(_ section: Section) {
-
         if let index = self.dataInput.firstIndex(where: { $0.differenceIdentifier == section.differenceIdentifier }) {
             self.dataInput[index] = section
             return

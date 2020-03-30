@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class ModelFooter {
+open class ModelFooter {
     
     public var differenceIdentifier: String!
     

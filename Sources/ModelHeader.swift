@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class ModelHeader {
+open class ModelHeader {
     
     public var differenceIdentifier: String!
     

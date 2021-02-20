@@ -3,13 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		396F119A25E161A40094E6B5 /* TestModelRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396F119725E161A40094E6B5 /* TestModelRow.swift */; };
 		396F119B25E161A40094E6B5 /* TestTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 396F119825E161A40094E6B5 /* TestTableCell.xib */; };
 		396F119C25E161A40094E6B5 /* TestTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396F119925E161A40094E6B5 /* TestTableCell.swift */; };
+		396F11C125E16A580094E6B5 /* SQDifferenceKit in Frameworks */ = {isa = PBXBuildFile; productRef = 396F11C025E16A580094E6B5 /* SQDifferenceKit */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				396F11C125E16A580094E6B5 /* SQDifferenceKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +121,9 @@
 			dependencies = (
 			);
 			name = SQDifferenceKit_Example;
+			packageProductDependencies = (
+				396F11C025E16A580094E6B5 /* SQDifferenceKit */,
+			);
 			productName = SQDifferenceKit;
 			productReference = 607FACD01AFB9204008FA782 /* SQDifferenceKit_Example.app */;
 			productType = "com.apple.product-type.application";
@@ -150,6 +155,9 @@
 				Base,
 			);
 			mainGroup = 607FACC71AFB9204008FA782;
+			packageReferences = (
+				396F11BF25E16A580094E6B5 /* XCRemoteSwiftPackageReference "SQDifferenceKit" */,
+			);
 			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -347,7 +355,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -358,7 +367,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4XJM4GSZPH;
 				INFOPLIST_FILE = SQDifferenceKit/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sequenia.SQDifferenceKit-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -373,7 +385,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4XJM4GSZPH;
 				INFOPLIST_FILE = SQDifferenceKit/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sequenia.SQDifferenceKit-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -404,6 +419,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		396F11BF25E16A580094E6B5 /* XCRemoteSwiftPackageReference "SQDifferenceKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "file:///Users/semenkologrivov/Documents/Workspace/iOS/SQDifferenceKit";
+			requirement = {
+				branch = task/smp_and_improves;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		396F11C025E16A580094E6B5 /* SQDifferenceKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 396F11BF25E16A580094E6B5 /* XCRemoteSwiftPackageReference "SQDifferenceKit" */;
+			productName = SQDifferenceKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 607FACC81AFB9204008FA782 /* Project object */;
 }

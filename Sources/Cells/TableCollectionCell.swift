@@ -8,7 +8,7 @@
 import UIKit
 import DifferenceKit
 
-open class TableCollectionCell: UITableView, CollectionCell, DiffCollectionProtocol {
+public class TableCollectionCell: UITableView, CollectionCell, DiffCollectionProtocol {
 
     public var scrollPosition: CGPoint {
         get {
@@ -29,17 +29,17 @@ open class TableCollectionCell: UITableView, CollectionCell, DiffCollectionProto
 
     public weak var collectionDelegate: CollectionCellDelegate?
 
+    public override func awakeFromNib() {
+        super.awakeFromNib()
+
+        self.initCollectionView()
+    }
+
     public func bind(model: CollectionModelRow, delegate: CollectionCellDelegate) {
         self.model = model
         self.collectionDelegate = delegate
 
         self.reloadAnimated()
-    }
-
-    open override func awakeFromNib() {
-        super.awakeFromNib()
-
-        self.initCollectionView()
     }
 
     internal func initCollectionView() {

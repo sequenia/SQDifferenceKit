@@ -10,11 +10,11 @@ import UIKit
 public protocol CollectionCell: class {
 
     var scrollPosition: CGPoint { get set }
-    var collectionView: UICollectionView { get }
+    var collectionView: UICollectionView! { get }
 
     var model: CollectionModelRow? { get set }
-    var delegate: CollectionCellDelegate? { get set }
+    var collectionDelegate: CollectionCellDelegate? { get set }
 
     func bind(model: CollectionModelRow,
-              delegage: CollectionCellDelegate)
+              delegate: CollectionCellDelegate)
 }

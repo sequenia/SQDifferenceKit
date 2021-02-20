@@ -40,7 +40,8 @@ open class ModelSection: Differentiable {
     }
     
     open func copy() -> ModelSection {
-        let object = type(of: self).init(id: self.differenceIdentifier, position: self.position)
+        let object = type(of: self).init(id: self.differenceIdentifier,
+                                         position: self.position)
         object.header = self.header?.copy()
         object.footer = self.footer?.copy()
         return object

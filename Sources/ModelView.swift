@@ -15,7 +15,7 @@ open class ModelView {
         self.differenceIdentifier = id
     }
 
-    open func isContentEqual (to source: ModelFooter?) -> Bool {
+    open func isContentEqual (to source: ModelView?) -> Bool {
         return self.differenceIdentifier == source?.differenceIdentifier
     }
 

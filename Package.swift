@@ -5,7 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "SQDifferenceKit",
-    platforms: [.iOS(.v12)],
+    platforms: [.iOS(.v9)],
     products: [
         .library(
             name: "SQDifferenceKit",
@@ -17,9 +17,9 @@ let package = Package(
     targets: [
         .target(
             name: "SQDifferenceKit",
-            dependencies: []),
-        .testTarget(
-            name: "SQDifferenceKitTests",
-            dependencies: ["SQDifferenceKit"]),
+            dependencies: [
+                .product(name: "DifferenceKit", package: "DifferenceKit")
+            ],
+            path: "./Sources/")
     ]
 )

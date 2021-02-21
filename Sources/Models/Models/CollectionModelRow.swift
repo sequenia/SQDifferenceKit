@@ -12,8 +12,8 @@ open class CollectionModelRow: ModelRow {
 
     public var sections = [Section]()
 
-    required convenience open init(id: String,
-                                     sections: [Section]) {
+    required public convenience init(id: String,
+                         sections: [Section]) {
         self.init(id: id)
         self.sections = sections
     }

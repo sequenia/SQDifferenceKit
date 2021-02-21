@@ -19,7 +19,7 @@ open class ModelView {
         return self.differenceIdentifier == source?.differenceIdentifier
     }
 
-    open func copy() -> Self {
+    open func copy() -> ModelView {
         let object = type(of: self).init(id: self.differenceIdentifier)
         return object
     }

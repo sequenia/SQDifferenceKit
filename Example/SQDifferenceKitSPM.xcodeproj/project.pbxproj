@@ -10,7 +10,7 @@
 		396F119A25E161A40094E6B5 /* TestModelRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396F119725E161A40094E6B5 /* TestModelRow.swift */; };
 		396F119B25E161A40094E6B5 /* TestTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 396F119825E161A40094E6B5 /* TestTableCell.xib */; };
 		396F119C25E161A40094E6B5 /* TestTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396F119925E161A40094E6B5 /* TestTableCell.swift */; };
-		396F11C125E16A580094E6B5 /* SQDifferenceKit in Frameworks */ = {isa = PBXBuildFile; productRef = 396F11C025E16A580094E6B5 /* SQDifferenceKit */; };
+		3976706A25E216560016E8FE /* SQDifferenceKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3976706925E216560016E8FE /* SQDifferenceKit */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -38,7 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				396F11C125E16A580094E6B5 /* SQDifferenceKit in Frameworks */,
+				3976706A25E216560016E8FE /* SQDifferenceKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,11 +110,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "SQDifferenceKit_Example" */;
 			buildPhases = (
-				E3EB2A63BD9BD13093AFF9D4 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				75DB4FFAEF3065EB7A7D288E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -122,7 +120,7 @@
 			);
 			name = SQDifferenceKit_Example;
 			packageProductDependencies = (
-				396F11C025E16A580094E6B5 /* SQDifferenceKit */,
+				3976706925E216560016E8FE /* SQDifferenceKit */,
 			);
 			productName = SQDifferenceKit;
 			productReference = 607FACD01AFB9204008FA782 /* SQDifferenceKit_Example.app */;
@@ -145,7 +143,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "SQDifferenceKit - SPM" */;
+			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "SQDifferenceKitSPM" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -156,7 +154,7 @@
 			);
 			mainGroup = 607FACC71AFB9204008FA782;
 			packageReferences = (
-				396F11BF25E16A580094E6B5 /* XCRemoteSwiftPackageReference "SQDifferenceKit" */,
+				3976706825E216560016E8FE /* XCRemoteSwiftPackageReference "SQDifferenceKit" */,
 			);
 			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
 			projectDirPath = "";
@@ -180,51 +178,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		75DB4FFAEF3065EB7A7D288E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SQDifferenceKit_Example/Pods-SQDifferenceKit_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/DifferenceKit/DifferenceKit.framework",
-				"${BUILT_PRODUCTS_DIR}/SQDifferenceKit/SQDifferenceKit.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DifferenceKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQDifferenceKit.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SQDifferenceKit_Example/Pods-SQDifferenceKit_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E3EB2A63BD9BD13093AFF9D4 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SQDifferenceKit_Example-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		607FACCC1AFB9204008FA782 /* Sources */ = {
@@ -367,6 +320,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4XJM4GSZPH;
 				INFOPLIST_FILE = SQDifferenceKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -385,6 +339,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4XJM4GSZPH;
 				INFOPLIST_FILE = SQDifferenceKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -400,7 +355,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "SQDifferenceKit - SPM" */ = {
+		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "SQDifferenceKitSPM" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACED1AFB9204008FA782 /* Debug */,
@@ -421,20 +376,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		396F11BF25E16A580094E6B5 /* XCRemoteSwiftPackageReference "SQDifferenceKit" */ = {
+		3976706825E216560016E8FE /* XCRemoteSwiftPackageReference "SQDifferenceKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "file:///Users/semenkologrivov/Documents/Workspace/iOS/SQDifferenceKit";
+			repositoryURL = "https://github.com/sequenia/SQDifferenceKit.git";
 			requirement = {
-				branch = task/smp_and_improves;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		396F11C025E16A580094E6B5 /* SQDifferenceKit */ = {
+		3976706925E216560016E8FE /* SQDifferenceKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 396F11BF25E16A580094E6B5 /* XCRemoteSwiftPackageReference "SQDifferenceKit" */;
+			package = 3976706825E216560016E8FE /* XCRemoteSwiftPackageReference "SQDifferenceKit" */;
 			productName = SQDifferenceKit;
 		};
 /* End XCSwiftPackageProductDependency section */

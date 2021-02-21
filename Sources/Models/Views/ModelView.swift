@@ -7,19 +7,19 @@
 
 import Foundation
 
-public class ModelView {
+open class ModelView {
 
     public var differenceIdentifier: String!
 
-    public required init(id: String) {
+    required convenience open init(id: String) {
         self.differenceIdentifier = id
     }
 
-    public func isContentEqual(to source: ModelView?) -> Bool {
+    open func isContentEqual(to source: ModelView?) -> Bool {
         return self.differenceIdentifier == source?.differenceIdentifier
     }
 
-    public func copy() -> Self {
+    open func copy() -> Self {
         let object = type(of: self).init(id: self.differenceIdentifier)
         return object
     }

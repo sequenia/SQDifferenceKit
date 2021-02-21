@@ -12,11 +12,11 @@
       },
       {
         "package": "SQDifferenceKit",
-        "repositoryURL": "/Users/semenkologrivov/Documents/Workspace/iOS/SQDifferenceKit",
+        "repositoryURL": "https://github.com/sequenia/SQDifferenceKit.git",
         "state": {
-          "branch": "task/smp_and_improves",
-          "revision": "46af64596539dfc47e70731bc77d5fdfa949f648",
-          "version": null
+          "branch": null,
+          "revision": "d237153a6ecac3b81b39e0f3a7cf52df55013bf6",
+          "version": "0.2.0"
         }
       }
     ]

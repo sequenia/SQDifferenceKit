@@ -13,8 +13,9 @@ open class CollectionModelRow: ModelRow {
     public var sections = [Section]()
 
     required public convenience init(id: String,
-                         sections: [Section]) {
+                                     sections: [Section]) {
         self.init(id: id)
+        
         self.sections = sections
     }
 
@@ -26,13 +27,19 @@ open class CollectionModelRow: ModelRow {
     }
 
     open func isSectionsContentEqual(to sourceSections: [Section]) -> Bool {
-        var isEqual = true
+        if sourceSections.count != self.sections.count { return false }
 
+        var isEqual = true
         for (index, section) in self.sections.enumerated() {
             let sourceSection = sourceSections[index]
 
             isEqual = isEqual && (section.elements == sourceSection.elements)
         }
         return isEqual
+    }
+
+    open override func copy() -> ModelRow {
+        return type(of: self).init(id: self.differenceIdentifier,
+                                   sections: self.sections)
     }
 }

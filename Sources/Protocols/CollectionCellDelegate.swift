@@ -14,9 +14,9 @@ public protocol CollectionCellDelegate: class {
 
     func collectionModel(_ model: CollectionModelRow?,
                          willShowModelRow modelRow: ModelRow?,
-                         inSection: Section?)
+                         inSection: ModelSection?)
 
     func collectionModel(_ model: CollectionModelRow?,
                          didSelectModel modelRow: ModelRow?,
-                         inSection: Section?)
+                         inSection: ModelSection?)
 }

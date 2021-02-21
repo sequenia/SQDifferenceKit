@@ -28,9 +28,9 @@ open class ModelRow: Differentiable {
 }
 
 extension ModelRow: Equatable {
-    
+
     public static func == (lhs: ModelRow, rhs: ModelRow) -> Bool {
         lhs.isContentEqual(to: rhs)
     }
-
+    
 }

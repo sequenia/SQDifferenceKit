@@ -11,7 +11,7 @@ open class ModelView {
 
     public var differenceIdentifier: String!
 
-    required convenience open init(id: String) {
+    required public init(id: String) {
         self.differenceIdentifier = id
     }
 

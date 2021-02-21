@@ -11,7 +11,7 @@ import DifferenceKit
 
 public typealias Section = ArraySection<ModelSection, ModelRow>
 
-open protocol PositionSection {
+public protocol PositionSection {
     func position() -> Int
 }
 
@@ -25,12 +25,12 @@ open class ModelSection: Differentiable {
     public var header: ModelHeader?
     public var footer: ModelFooter?
     
-    required convenience open init(id: String, position: PositionSection) {
+    required public init(id: String, position: PositionSection) {
         self.differenceIdentifier = id
         self.position = position
     }
      
-    open init(position: PositionSection) {
+    required public init(position: PositionSection) {
         self.position = position
         self.differenceIdentifier = String(position.position())
     }

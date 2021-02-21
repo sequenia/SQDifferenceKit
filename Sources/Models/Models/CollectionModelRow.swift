@@ -8,24 +8,24 @@
 import Foundation
 import DifferenceKit
 
-public class CollectionModelRow: ModelRow {
+open class CollectionModelRow: ModelRow {
 
     public var sections = [Section]()
 
-    required convenience public init(id: String,
+    required convenience open init(id: String,
                                      sections: [Section]) {
         self.init(id: id)
         self.sections = sections
     }
 
-    public override func isContentEqual(to source: ModelRow) -> Bool {
+    open override func isContentEqual(to source: ModelRow) -> Bool {
         guard let collectionModelRow = source as? CollectionModelRow else { return false }
 
         return self.differenceIdentifier == source.differenceIdentifier &&
                self.isSectionsContentEqual(to: collectionModelRow.sections)
     }
 
-    public func isSectionsContentEqual(to sourceSections: [Section]) -> Bool {
+    open func isSectionsContentEqual(to sourceSections: [Section]) -> Bool {
         var isEqual = true
 
         for (index, section) in self.sections.enumerated() {

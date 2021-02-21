@@ -9,20 +9,20 @@
 import Foundation
 import DifferenceKit
 
-public class ModelRow: Differentiable {
+open class ModelRow: Differentiable {
 
     public typealias DifferenceIdentifier = String
     public var differenceIdentifier: String
     
-    public required init(id: String) {
+    required convenience open init(id: String) {
         self.differenceIdentifier = id
     }
     
-    public func isContentEqual(to source: ModelRow) -> Bool {
+    open func isContentEqual(to source: ModelRow) -> Bool {
         return self.differenceIdentifier == source.differenceIdentifier
     }
     
-    public func copy() -> ModelRow {
+    open func copy() -> ModelRow {
         return type(of: self).init(id: self.differenceIdentifier)
     }
 }

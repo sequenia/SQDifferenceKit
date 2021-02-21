@@ -11,11 +11,11 @@ import DifferenceKit
 
 public typealias Section = ArraySection<ModelSection, ModelRow>
 
-public protocol PositionSection {
+open protocol PositionSection {
     func position() -> Int
 }
 
-public class ModelSection: Differentiable {
+open class ModelSection: Differentiable {
     
     public typealias DifferenceIdentifier = String
     public private(set) var differenceIdentifier: String
@@ -25,21 +25,21 @@ public class ModelSection: Differentiable {
     public var header: ModelHeader?
     public var footer: ModelFooter?
     
-    public required init(id: String, position: PositionSection) {
+    required convenience open init(id: String, position: PositionSection) {
         self.differenceIdentifier = id
         self.position = position
     }
      
-    public init(position: PositionSection) {
+    open init(position: PositionSection) {
         self.position = position
         self.differenceIdentifier = String(position.position())
     }
     
-    public func isContentEqual(to source: ModelSection) -> Bool {
+    open func isContentEqual(to source: ModelSection) -> Bool {
         return self.differenceIdentifier == source.differenceIdentifier && self.header?.isContentEqual(to: source.header) ?? true && self.footer?.isContentEqual(to: source.footer) ?? true
     }
     
-    public func copy() -> ModelSection {
+    open func copy() -> ModelSection {
         let object = type(of: self).init(id: self.differenceIdentifier,
                                          position: self.position)
         object.header = self.header?.copy()

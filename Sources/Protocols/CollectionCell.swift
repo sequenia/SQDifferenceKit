@@ -18,3 +18,16 @@ public protocol CollectionCell: class {
     func bind(model: CollectionModelRow,
               delegate: CollectionCellDelegate)
 }
+
+extension CollectionCell {
+    
+    var scrollPosition: CGPoint {
+        get {
+            self.collectionView.contentOffset
+        }
+
+        set {
+            self.collectionView.setContentOffset(newValue, animated: false)
+        }
+    }
+}

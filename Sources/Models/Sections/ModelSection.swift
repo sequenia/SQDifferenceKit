@@ -15,7 +15,7 @@ public protocol PositionSection {
     func position() -> Int
 }
 
-open class ModelSection: Differentiable {
+public class ModelSection: Differentiable {
     
     public typealias DifferenceIdentifier = String
     public private(set) var differenceIdentifier: String
@@ -35,11 +35,11 @@ open class ModelSection: Differentiable {
         self.differenceIdentifier = String(position.position())
     }
     
-    open func isContentEqual(to source: ModelSection) -> Bool {
+    public func isContentEqual(to source: ModelSection) -> Bool {
         return self.differenceIdentifier == source.differenceIdentifier && self.header?.isContentEqual(to: source.header) ?? true && self.footer?.isContentEqual(to: source.footer) ?? true
     }
     
-    open func copy() -> ModelSection {
+    public func copy() -> ModelSection {
         let object = type(of: self).init(id: self.differenceIdentifier,
                                          position: self.position)
         object.header = self.header?.copy()

@@ -8,6 +8,6 @@
 
 import Foundation
 
-open class ModelFooter: ModelView {
+public class ModelFooter: ModelView {
 
 }

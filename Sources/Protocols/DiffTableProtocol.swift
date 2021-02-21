@@ -18,7 +18,7 @@ private struct DiffTableAssociatedKeys {
 }
 
 // MARK: - Protocol
-protocol DiffTableProtocol: class {
+public protocol DiffTableProtocol: class {
 
     var data: [Section] { get }
     var tableView: UITableView! { get }
@@ -39,7 +39,7 @@ protocol DiffTableProtocol: class {
 }
 
 // MARK: - Variables
-extension DiffTableProtocol {
+public extension DiffTableProtocol {
 
     private var dataInput: [Section] {
         get {
@@ -87,7 +87,7 @@ extension DiffTableProtocol {
 }
 
 // MARK: - Work with sections
-extension DiffTableProtocol {
+public extension DiffTableProtocol {
 
     func appendOrReplaceSection(_ section: Section) {
         if let index = self.dataInput.firstIndex(where: { $0.differenceIdentifier == section.differenceIdentifier }) {
@@ -100,7 +100,7 @@ extension DiffTableProtocol {
 }
 
 // MARK: - Reloads
-extension DiffTableProtocol {
+public extension DiffTableProtocol {
 
     func reloadAnimated() {
         self.reloadAnimated(.automatic)
@@ -119,7 +119,7 @@ extension DiffTableProtocol {
         self.reload(usingChangeset: changeset, animation: animated)
     }
 
-    private func reload(usingChangeset changeset: StagedChangeset<[Section]>,
+    func reload(usingChangeset changeset: StagedChangeset<[Section]>,
                         animation: UITableView.RowAnimation) {
         self.tableView.reload(using: changeset, with: animation, setData: { (data) in
             self.data = data.map { (section) -> Section in
@@ -133,7 +133,7 @@ extension DiffTableProtocol {
 }
 
 // MARK: - Cache
-extension DiffTableProtocol {
+public extension DiffTableProtocol {
 
     func cacheKey(forModel model: ModelRow, inSection section: Int) -> String {
         return "\(section)-\(model.differenceIdentifier)"
@@ -142,7 +142,7 @@ extension DiffTableProtocol {
 }
 
 // MARK: - Cell heights
-extension DiffTableProtocol {
+public extension DiffTableProtocol {
 
     func storeHeight(forCell cell: UITableViewCell,
                      atIndexPath indexPath: IndexPath) {
@@ -157,7 +157,7 @@ extension DiffTableProtocol {
 }
 
 // MARK: - Scroll positions
-extension DiffTableProtocol {
+public extension DiffTableProtocol {
 
     func storeScrollPosition(forCell cell: UITableViewCell,
                              atIndexPath indexPath: IndexPath) {

@@ -18,7 +18,7 @@ private struct DiffCollectionAssociatedKeys {
 }
 
 // MARK: - Protocol
-protocol DiffCollectionProtocol: class {
+public protocol DiffCollectionProtocol: class {
 
     var data: [Section] { get }
     var collectionView: UICollectionView! { get }
@@ -36,7 +36,7 @@ protocol DiffCollectionProtocol: class {
 }
 
 // MARK: - Variables
-extension DiffCollectionProtocol {
+public extension DiffCollectionProtocol {
 
     private var dataInput: [Section] {
         get {
@@ -73,7 +73,7 @@ extension DiffCollectionProtocol {
 }
 
 // MARK: - Work with sections
-extension DiffCollectionProtocol {
+public extension DiffCollectionProtocol {
 
     func appendOrReplaceSection(_ section: Section) {
         if let index = self.dataInput.firstIndex(where: { $0.differenceIdentifier == section.differenceIdentifier }) {
@@ -86,7 +86,7 @@ extension DiffCollectionProtocol {
 }
 
 // MARK: - Reloads
-extension DiffCollectionProtocol {
+public extension DiffCollectionProtocol {
 
     func reloadAnimated() {
         self.reloadAnimated(true)
@@ -106,7 +106,7 @@ extension DiffCollectionProtocol {
         self.reload(usingChangeset: changeset)
     }
 
-    private func reload(usingChangeset changeset: StagedChangeset<[Section]>) {
+    func reload(usingChangeset changeset: StagedChangeset<[Section]>) {
         self.collectionView.reload(using: changeset, setData: { (data) in
             self.data = data.map { (section) -> Section in
                 let tempsection = section.model.copy()
@@ -119,7 +119,7 @@ extension DiffCollectionProtocol {
 }
 
 // MARK: - Cache
-extension DiffCollectionProtocol {
+public extension DiffCollectionProtocol {
 
     func cacheKey(forModel model: ModelRow, inSection section: Int) -> String {
         return "\(section)-\(model.differenceIdentifier)"
@@ -128,7 +128,7 @@ extension DiffCollectionProtocol {
 }
 
 // MARK: - Scroll positions
-extension DiffCollectionProtocol {
+public extension DiffCollectionProtocol {
 
     func storeScrollPosition(forCell cell: UICollectionViewCell,
                              atIndexPath indexPath: IndexPath) {

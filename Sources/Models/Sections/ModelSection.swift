@@ -22,8 +22,8 @@ open class ModelSection: Differentiable {
     
     public private(set) var position: PositionSection!
     
-    public var header: ModelHeader?
-    public var footer: ModelFooter?
+    public var header: ModelView?
+    public var footer: ModelView?
     
     required public init(id: String, position: PositionSection) {
         self.differenceIdentifier = id

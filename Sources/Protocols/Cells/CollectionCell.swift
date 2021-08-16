@@ -7,7 +7,7 @@
 
 import UIKit
 
-public protocol CollectionCell: class {
+public protocol CollectionCell: AnyObject {
 
     var scrollPosition: CGPoint { get set }
     var collectionView: UICollectionView! { get }
@@ -15,8 +15,10 @@ public protocol CollectionCell: class {
     var model: CollectionModelRow? { get set }
     var collectionDelegate: CollectionCellDelegate? { get set }
 
-    func bind(model: CollectionModelRow,
-              delegate: CollectionCellDelegate?)
+    func bind(
+        model: CollectionModelRow,
+        delegate: CollectionCellDelegate?
+    )
 }
 
 public extension CollectionCell {

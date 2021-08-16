@@ -12,9 +12,13 @@ open class CollectionModelRow: ModelRow {
 
     public var sections = [Section]()
 
-    required public convenience init(id: String,
-                                     sections: [Section]) {
-        self.init(id: id)
+    required public convenience init(
+        id: String,
+        sections: [Section],
+        showSkeleton: Bool = false,
+        showSeparator: Bool = true
+    ) {
+        self.init(id: id, showSkeleton: showSkeleton, showSeparator: showSeparator)
         
         self.sections = sections
     }
@@ -22,8 +26,8 @@ open class CollectionModelRow: ModelRow {
     open override func isContentEqual(to source: ModelRow) -> Bool {
         guard let collectionModelRow = source as? CollectionModelRow else { return false }
 
-        return self.differenceIdentifier == source.differenceIdentifier &&
-               self.isSectionsContentEqual(to: collectionModelRow.sections)
+        return super.isContentEqual(to: source) &&
+            self.isSectionsContentEqual(to: collectionModelRow.sections)
     }
 
     open func isSectionsContentEqual(to sourceSections: [Section]) -> Bool {
@@ -39,7 +43,11 @@ open class CollectionModelRow: ModelRow {
     }
 
     open override func copy() -> ModelRow {
-        return type(of: self).init(id: self.differenceIdentifier,
-                                   sections: self.sections)
+        return type(of: self).init(
+            id: self.differenceIdentifier,
+            sections: self.sections,
+            showSkeleton: self.showSkeleton,
+            showSeparator: self.showSeparator
+        )
     }
 }

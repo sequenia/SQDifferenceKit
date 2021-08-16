@@ -36,12 +36,17 @@ open class ModelSection: Differentiable {
     }
     
     open func isContentEqual(to source: ModelSection) -> Bool {
-        return self.differenceIdentifier == source.differenceIdentifier && self.header?.isContentEqual(to: source.header) ?? true && self.footer?.isContentEqual(to: source.footer) ?? true
+        return self.differenceIdentifier == source.differenceIdentifier &&
+            self.header == source.header &&
+            self.footer == source.footer
     }
     
     open func copy() -> ModelSection {
-        let object = type(of: self).init(id: self.differenceIdentifier,
-                                         position: self.position)
+        let object = type(of: self).init(
+            id: self.differenceIdentifier,
+            position: self.position
+        )
+        
         object.header = self.header?.copy()
         object.footer = self.footer?.copy()
         return object

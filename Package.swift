@@ -12,7 +12,7 @@ let package = Package(
             targets: ["SQDifferenceKit"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/ra1028/DifferenceKit.git", from: "1.1.5")
+        .package(url: "https://github.com/ra1028/DifferenceKit.git", from: "1.2.0")
     ],
     targets: [
         .target(

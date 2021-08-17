@@ -21,7 +21,7 @@ public protocol DiffListProtocol: AnyObject {
 
     var data: [Section] { get }
 
-    func appendOrReplaceSection(_ section: Section)
+    func appendOrReplaceSection(_ section: Section?)
 
     func cacheKey(forModel model: ModelRow, inSection section: Int) -> String
 
@@ -73,13 +73,15 @@ public extension DiffListProtocol {
 // MARK: - Work with sections
 public extension DiffListProtocol {
 
-    func appendOrReplaceSection(_ section: Section) {
-        if let index = self.dataInput.firstIndex(where: { $0.differenceIdentifier == section.differenceIdentifier }) {
-            self.dataInput[index] = section
+    func appendOrReplaceSection(_ section: Section?) {
+        guard let newSection = section else { return }
+
+        if let index = self.dataInput.firstIndex(where: { $0.differenceIdentifier == newSection.differenceIdentifier }) {
+            self.dataInput[index] = newSection
             return
         }
 
-        self.dataInput.append(section)
+        self.dataInput.append(newSection)
     }
 }
 

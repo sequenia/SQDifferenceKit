@@ -112,9 +112,7 @@ public extension DiffListProtocol {
         let model = self.data[indexPath.section].elements[indexPath.row]
         let key = self.cacheKey(forModel: model, inSection: indexPath.section)
 
-        if let offset = self.scrollsPositions[key] {
-            cell?.scrollPosition = offset
-        }
+        cell?.scrollPosition = self.scrollsPositions[key] ?? .zero
     }
 
     func resetScrollPositions() {

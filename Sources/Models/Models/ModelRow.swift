@@ -41,6 +41,13 @@ open class ModelRow: Differentiable {
         )
     }
 
+    open func copyWithPrefix(prefix: String) -> ModelRow {
+        let copy = self.copy()
+        copy.differenceIdentifier = "\(prefix)_\(copy.differenceIdentifier)"
+        return copy
+
+    }
+
     public func setDifferenceId(_ id: String) {
         self.differenceIdentifier = id
     }

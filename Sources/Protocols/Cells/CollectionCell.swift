@@ -15,20 +15,9 @@ public protocol CollectionCell: AnyObject {
     var model: CollectionModelRow? { get set }
     var collectionDelegate: CollectionCellDelegate? { get set }
 
+    @discardableResult
     func bind(
         model: CollectionModelRow,
         delegate: CollectionCellDelegate?
-    )
-}
-
-public extension CollectionCell {
-    
-    var scrollPosition: CGPoint {
-        get {
-            self.collectionView.contentOffset
-        }
-        set {
-            self.collectionView.setContentOffset(newValue, animated: false)
-        }
-    }
+    ) -> Self
 }

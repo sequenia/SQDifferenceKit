@@ -15,11 +15,9 @@ open class InfiniteCollectionModelRow: CollectionModelRow {
     required public convenience init(
         id: String,
         collectionSection: ModelSection,
-        collectionRows: [ModelRow],
-        showSkeleton: Bool = false,
-        showSeparator: Bool = true
+        collectionRows: [ModelRow]
     ) {
-        self.init(id: id, showSkeleton: showSkeleton, showSeparator: showSeparator)
+        self.init(id: id)
 
         self.originalCount = collectionRows.count
         let modelRowCopies = collectionRows.enumerated().map { $1.copyWithPrefix(prefix: "\($0)") }
@@ -44,11 +42,11 @@ open class InfiniteCollectionModelRow: CollectionModelRow {
     override open func copy() -> ModelRow {
         let copy = type(of: self).init(
             id: self.differenceIdentifier,
-            sections: self.sections,
-            showSkeleton: self.showSkeleton,
-            showSeparator: self.showSeparator
+            sections: self.sections
         )
         copy.originalCount = self.originalCount
+        copy.showSeparator = self.showSeparator
+        copy.showSkeleton = self.showSkeleton
         return copy
     }
 }

@@ -14,17 +14,11 @@ open class ModelRow: Differentiable {
     public typealias DifferenceIdentifier = String
 
     public private(set) var differenceIdentifier: String
-    public private(set) var showSkeleton = false
-    public private(set) var showSeparator = true
+    public var showSkeleton = false
+    public var showSeparator = true
     
-    required public init(
-        id: String,
-        showSkeleton: Bool = false,
-        showSeparator: Bool = true
-    ) {
+    required public init(id: String) {
         self.differenceIdentifier = id
-        self.showSkeleton = showSkeleton
-        self.showSeparator = showSeparator
     }
     
     open func isContentEqual(to source: ModelRow) -> Bool {
@@ -34,11 +28,12 @@ open class ModelRow: Differentiable {
     }
     
     open func copy() -> ModelRow {
-        return type(of: self).init(
+        let copy =  type(of: self).init(
             id: self.differenceIdentifier,
-            showSkeleton: self.showSkeleton,
-            showSeparator: self.showSeparator
         )
+        copy.showSeparator = self.showSeparator
+        copy.showSkeleton = self.showSkeleton
+        return copy
     }
 
     open func copyWithPrefix(prefix: String) -> ModelRow {

@@ -14,11 +14,9 @@ open class CollectionModelRow: ModelRow {
 
     required public convenience init(
         id: String,
-        sections: [Section],
-        showSkeleton: Bool = false,
-        showSeparator: Bool = true
+        sections: [Section]
     ) {
-        self.init(id: id, showSkeleton: showSkeleton, showSeparator: showSeparator)
+        self.init(id: id)
         
         self.sections = sections
     }
@@ -43,11 +41,12 @@ open class CollectionModelRow: ModelRow {
     }
 
     open override func copy() -> ModelRow {
-        return type(of: self).init(
+        let copy = type(of: self).init(
             id: self.differenceIdentifier,
-            sections: self.sections,
-            showSkeleton: self.showSkeleton,
-            showSeparator: self.showSeparator
+            sections: self.sections
         )
+        copy.showSkeleton = self.showSkeleton
+        copy.showSeparator = self.showSeparator
+        return copy
     }
 }

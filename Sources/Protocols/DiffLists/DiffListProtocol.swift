@@ -99,6 +99,9 @@ public extension DiffListProtocol {
 
     func storeScrollPosition(forCell cell: CollectionCell?,
                              atIndexPath indexPath: IndexPath) {
+        if indexPath.section >= self.data.count ||
+            indexPath.row >= self.data[indexPath.section].elements.count { return }
+
         let model = self.data[indexPath.section].elements[indexPath.row]
         let key = self.cacheKey(forModel: model, inSection: indexPath.section)
 
@@ -111,6 +114,9 @@ public extension DiffListProtocol {
 
     func restoreScrollPosition(forCell cell: CollectionCell?,
                                atIndexPath indexPath: IndexPath) {
+        if indexPath.section >= self.data.count ||
+            indexPath.row >= self.data[indexPath.section].elements.count { return }
+        
         let model = self.data[indexPath.section].elements[indexPath.row]
         let key = self.cacheKey(forModel: model, inSection: indexPath.section)
 

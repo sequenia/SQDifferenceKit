@@ -10,14 +10,10 @@ import Foundation
 open class ModelView {
 
     public private(set) var differenceIdentifier: String!
-    public private(set) var showSkeleton = false
+    public var showSkeleton = false
 
-    required public init(
-        id: String,
-        showSkeleton: Bool = false
-    ) {
+    required public init(id: String) {
         self.differenceIdentifier = id
-        self.showSkeleton = showSkeleton
     }
 
     open func isContentEqual(to source: ModelView) -> Bool {
@@ -26,10 +22,11 @@ open class ModelView {
     }
 
     open func copy() -> ModelView {
-        return type(of: self).init(
-            id: self.differenceIdentifier,
-            showSkeleton: self.showSkeleton
+        let copy =  type(of: self).init(
+            id: self.differenceIdentifier
         )
+        copy.showSkeleton = self.showSkeleton
+        return copy
     }
 }
 

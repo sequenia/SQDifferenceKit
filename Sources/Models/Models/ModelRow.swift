@@ -29,7 +29,7 @@ open class ModelRow: Differentiable {
     
     open func copy() -> ModelRow {
         let copy =  type(of: self).init(
-            id: self.differenceIdentifier,
+            id: self.differenceIdentifier
         )
         copy.showSeparator = self.showSeparator
         copy.showSkeleton = self.showSkeleton

@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
     s.summary = "Base data to implementig as UITableCell/UICollectionView\'s data."
     s.requires_arc = true
 
-    s.version = "0.2.2"
+    s.version = "1.0.3"
     s.license  = { :type => "MIT", :file => "LICENSE" }
     s.author   = { 'lab-devoloper' => 'ivan.michaylovsky@sequenia.com' }
     s.homepage         = "https://github.com/sequenia/SQDifferenceKit"
@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
                            :tag => "#{s.version}" }
 
     s.framework = "UIKit"
-    s.dependency 'DifferenceKit', '~> 1.1.5'
+    s.dependency 'DifferenceKit', '~> 1.2.0'
     s.swift_version = "4.2"
 
     s.source_files = "Sources/**/*.{swift}"
